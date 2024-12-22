@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -13,17 +14,6 @@
         android:layout_centerHorizontal="true"
         android:src="@drawable/logo" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="45dp"
-        android:layout_toRightOf="@+id/imgnewspaper"
-        android:text="reels"
-        android:textColor="@color/white"
-        android:textSize="10dp"
-        android:textStyle="italic|bold" />
-
     <VideoView
         android:id="@+id/videoView_single"
         android:layout_width="match_parent"
@@ -35,6 +25,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="104dp"
+        android:layout_height="133dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="179dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btncomment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/comment" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <ImageView
+            android:id="@+id/btnlike"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/like" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
